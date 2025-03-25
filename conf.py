@@ -53,6 +53,12 @@ import os
 import sys
 sys.path.append(os.path.abspath('_static'))
 
+# 使用环境变量动态设置路径（可选）
+import os
+if os.environ.get('READTHEDOCS') == 'True':
+    build_dir = os.path.join(os.environ['READTHEDOCS_OUTPUT'], 'html')
+else:
+    build_dir = '_build/html'
 
 # PDF 文档元数据
 pdf_documents = [
