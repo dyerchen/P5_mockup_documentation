@@ -1,0 +1,11 @@
+{
+    "embeddedFonts": ["simsun.ttc"],
+    "fontsAlias": {
+        "stdFont": "simsun",
+        "stdBold": "simsun",
+        "stdItalic": "simsun"
+    },
+    "styles": [
+        ["base", {"wordWrap": "CJK"}]
+    ]
+}
