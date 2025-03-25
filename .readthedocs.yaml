@@ -18,13 +18,10 @@ build:
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
   configuration: conf.py
-  build_dir: $READTHEDOCS_OUTPUT/html  # 强制输出到平台要求的目录
-  fail_on_warning: true  # 可选：将警告视为错误
   
 # Optionally build your docs in additional formats such as PDF and ePub
-# formats:
-#    - pdf
-#    - epub
+formats:
+  - html
 
 # Optional but recommended, declare the Python requirements required
 # to build your documentation
