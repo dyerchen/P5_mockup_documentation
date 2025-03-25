@@ -53,12 +53,11 @@ import os
 import sys
 sys.path.append(os.path.abspath('_static'))
 
-# 使用环境变量动态设置路径（可选）
-import os
+# 根据 Read the Docs 环境变量调整路径
 if os.environ.get('READTHEDOCS') == 'True':
     build_dir = os.path.join(os.environ['READTHEDOCS_OUTPUT'], 'html')
 else:
-    build_dir = '_build/html'
+    build_dir = '_build/html'  # 本地开发时保留默认路径
 
 # PDF 文档元数据
 pdf_documents = [
